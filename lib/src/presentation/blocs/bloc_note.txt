@@ -1,0 +1,10 @@
+##event
+#- hãy bắt đầu bằng việc xác định có event mà ta sẽ sử dụng trước
+khi code.
+Ở đây, ta chỉ có duy nhất một event sẽ gửi sự kiện đến Bloc đó là
+"GetArticles".
+
+##state
+#- sau khi đã xác định được các event, hãy nghĩ tới các event đó sẽ
+gây ra ảnh hưởng gì đến state. Thông thường, có 3 trường hợp bao gồm:
+- Loading, Done, Error.

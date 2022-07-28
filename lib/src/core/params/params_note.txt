@@ -1,0 +1,6 @@
+# Lợi ích của việc viết code bên articles_request là gì?
+- Do ta đang cố gấng viết một clean code để sau này khi chúng
+ta cần truyền các tham số đến một function/method để lấy các bài viết
+từ RestApi chúng ta truyền class này, bởi vì một clean function/method
+nên có 3 tham số trở xuống, nếu không chúng ta tạo một class như thế này
+và truyền nó như một tham số cho hàm/phương thức đó.

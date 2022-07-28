@@ -1,0 +1,9 @@
+# - Một class có thể được gọi là một class chứa các
+Implementations của phương thức "call" và chính phương thức "call"
+này chịu trách nhiệm làm cho phiên bản có thể gọi được thay vì phương thức
+"call" của chính phiên bản đó.
+
+-- Với abstracted Usecase: - đây là đại diện của các UseCase và abstrac class
+này sẽ lấy một type T và một params P.
+Loại phương thức "call" sẽ quay lại và các tham số là các tham số mà
+"call" có thể yêu cầu ( có thể đặt thành void nếu không có thông số nào được yêu cầu).

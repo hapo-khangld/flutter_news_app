@@ -1,0 +1,6 @@
+# - ta đang thực hiện call remote APi từ xa, mọi yêu cầu đều thực hiện
+với máy chủ mà chúng ta muốn nhận phản hồi... Nhưng nếu có trường hợp sự cố xảy
+ra thì sao?
+- Đây là một wrapper class - một lớp trình bao bọc, kết thúc toàn bộ
+phản hồi mạng của DataState có thể có 2 trạng thái: - thành công hoặc
+không thành công với lỗi loại DioError

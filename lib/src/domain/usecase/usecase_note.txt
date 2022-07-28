@@ -1,0 +1,14 @@
+#- Ở đây ta tạo một class được implements các abstracted representation
+của UseCase class để chúng ta có thể làm cho GetArticlesUseCase class
+là một kiểu thuộc UseCase, lấy Data<List<Article>> làm kiểu trả về
+và ArticlesRequestParams làm tham số cho phương thức 'call' bị ghi đè.
+
+------------------------------------------
+#- Ta thấy ở trường hợp này, class này phụ thuộc vào ArticlesRepository nhưng chúng ta
+sẽ không khởi tạo nó bên trong class UseCase này. Thay vào đó, sau này ta sẽ inject sự
+phụ thuộc này bằng cách sử dụng get_it.
+
+-----------------------------------------
+Tất cả những gì ta viết cho đến nay đều là các entities và abtraction đó là tất cả, các
+triển khai thực sự sẽ nằm trong tầng Data Layer. Và bất kỳ thay đổi nào cũng xảy ra trong
+tương lai bên trong Data Layer... nó sẽ không ảnh hưởng đến Domain Layer.

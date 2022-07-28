@@ -1,0 +1,13 @@
+#- Đây là class triển khai những gì ta đã định nghãi trong
+domain/repositories, class này phụ thuộc vào class NewsApiService mà ta đã định
+nghĩa trước đó. Một lần nữa, ta sẽ không khởi tạo nó trực tiếp bên trong
+class này vì ta sẽ sử dụng get_it sau.
+
+- Đây là việc sử dụng DataState mà ta đã nói trước đó, bây giờ ta đang thực hiện một
+yêu cầu từ mạng và nếu nó diễn ra tốt đẹp, nó sẽ trả về một DataSuccess với dữ liệu của chúng ta
+là (List<Article>), nếu không => nó sẽ trả về Datafailed với DioError để cho tầng
+presentation biết và một lần nữa, nếu có thay đổi nào xảy ra, nó sẽ không ảnh
+hưởng đến tầng Presentation(BLOC/UI).
+
+- Sử dụng DioErro cũng cung cấp cho chúng ta loại lỗi ảnh hưởng đến chính
+lỗi đó (connect_timeout, reponse,...)

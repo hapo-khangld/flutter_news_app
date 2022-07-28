@@ -1,0 +1,5 @@
+#- Lớp domain chỉ chứa các contact(abstraction - trừu tượng hóa)
+các implementations ( các triển khai) sẽ nằm trong tầng Data Layer.
+vì vậy, bây giờ ta sẽ định nghĩa một abstracted class chưa một phương
+thức loại Future và trả về dữ liệu thuộc kiểu List<Article> được bọc bằng
+DataState để biết được trạng thái phản hồi.

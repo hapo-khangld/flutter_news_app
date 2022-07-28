@@ -1,0 +1,3 @@
+#- sử dụng để gọi data từ api về
+-------------------
++ với việc sử dụng query thì nên là int?
