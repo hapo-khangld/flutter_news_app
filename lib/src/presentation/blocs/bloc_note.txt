@@ -8,3 +8,25 @@ khi code.
 #- sau khi đã xác định được các event, hãy nghĩ tới các event đó sẽ
 gây ra ảnh hưởng gì đến state. Thông thường, có 3 trường hợp bao gồm:
 - Loading, Done, Error.
+
+##bloc
+#- có sự khác nhau ỏ đây khi ta sử dụng BlocWithState thay vì sử dụng Bloc
+(do hiện tại trình ng làm gà chưa nắm rõ cách hoạt động của nó).
+- Vấn đề này sẽ được cập nhật trong thơi gian sớm nhất.
+-------------
+Nói về Bloc, thì đầu tiên Bloc sẽ nhận các sự kiện thuộc RemoteArticlesEvent
+và phát ra các trạng thái của RemoteArticlesState (đó là những gì ta đã định
+nghĩa ở trên).
+
+Sau đó, Bloc này phụ thuộc vào GetArticlesUseCase mà ta đã xác định trong
+domain/usecase (sẽ được đưa vào sau), bản thân UseCase này sẽ trả về các trạng
+thái mà ta cần (dữ liệu được get thành công hoặc lỗi). Ta sẽ lưu trữ dữ liệu
+thành công đến trong biến (_articles), ta cũng có khả năng phân trang(_page, _pageSize)..
+chỉ đơn giản là mỗi khi ta nhận được sự kiện và nhận được dữ liệu thành công, ta
+sẽ tăng _page lên 1 và từ các yêu cầu tiếp theo, page sẽ là 2,3,...
+- Sau đó, ta sẽ kiểm tra (dùng phương thức được ghi đè mapEventToState)
+nếu sự kiện là GetArticles thì ta sẽ trả về phương thức _getBreakingNewsArticles.
+- Quy trình thực hiện ở đây là cố gắng lấy dữ liệu bằng UseCase và thông báo ở đây
+rằng ta đang sử dụng chức năng có thể gọi được. Kiểm tra xem thành công không, nếu Ok,
+ta phát ra trạng thái Done (emit Done state với dữ liệu của chúng ta).. nếu không,
+phát ra trạng thái Error( emit Error) với lỗi đã kiểm tra được.

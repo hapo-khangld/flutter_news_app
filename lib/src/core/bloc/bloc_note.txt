@@ -1,0 +1,5 @@
+# - Ở đây, ta sử dụng một số loại bloc class khác nhau được gọi là
+BlocWithState và những gì lớp này thực hiện là làm cho app có khả năng chạy theo quy trình
+và thay đổi trạng thái Bloc state(hiện tại) - (busy or idle)
+Điều này sẽ rất hữu ích nếu chúng ta muốn thực hiện muộn quá trình tại một
+thời điểm và cho chúng ta biết về trạng thái của khối hiện tại.

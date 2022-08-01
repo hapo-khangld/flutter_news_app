@@ -1,0 +1,8 @@
+flutter_hook: => Hook là một loại đối tượng được sử dụng để quản lý vòng đồi của
+các Widgets. Chúng tồn tại vì một lý do: tăng cường chia sẻ mã giữa các widget bằng cách
+loại bỏ các bản sao. Vì vậy, đó là một cách để giảm việc trùng lặp các mã code
+và làm cho việc chia sẻ mã trở nên dễ dàng và đơn giản hơn. Với các hook mà
+flutter cung cấp cho chúng ta, các hook tích hợp ta có thể sử dụng khi cài đặt gói.
+Ví dụ: thay vì tạo StatefulWidgets để xây dựng một widget sử dụng AnimationController
+với initState, dispose,... chúng ta chỉ cần sử dụng (useAnimationController) Hook bên
+trong phương pháp xây dựng. 
