@@ -79,6 +79,7 @@ class BreakingNewsView extends HookWidget {
               builder: (context) => ArticleWidget(
                 article: e,
                 onArticlePressed: (e) => _onArticlePressed(context, e),
+                onRemove: (Article article) {},
               ),
             ),
           ),

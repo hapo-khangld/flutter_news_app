@@ -102,9 +102,9 @@ flutter:
   fonts:
     - family: Butler
       fonts:
-        - asset: assets/fonts/butler_and_butlerstencil/Butler_Bold.ttf
-        - asset: assets/fonts/butler_and_butlerstencil/Butler_Light.ttf
-        - asset: assets/fonts/butler_and_butlerstencil/Butler_Regular.ttf
+        - asset: assets/fonts/butler/Butler_Bold.otf
+        - asset: assets/fonts/butler/Butler_Light.otf
+        - asset: assets/fonts/butler/Butler_Regular.otf
 
     - family: IBM
       fonts:
